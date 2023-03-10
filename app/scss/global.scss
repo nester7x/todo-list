@@ -1,7 +1,7 @@
-$accent-color: #178CA4;
-$day-color: #178CA4;
+$accent-color: #178ca4;
+$day-color: #178ca4;
 $btn-color: #ffffff;
-$priority-color: #FFA101;
+$priority-color: #ffa101;
 
 body {
   font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@ body {
   font-style: normal;
   font-size: 18px;
   line-height: 130%;
-  background-color: #18B7BE;
+  background-color: #18b7be;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,9 @@ body {
   }
 }
 
-.day:nth-child(1), .day:nth-child(2), .day:nth-child(3) {
+.day:nth-child(1),
+.day:nth-child(2),
+.day:nth-child(3) {
   margin: 10px 10px 10px 175px;
 }
 
@@ -63,7 +65,7 @@ body {
   min-height: 250px;
   margin: 10px;
   padding: 10px 15px 40px;
-  transition: .3s;
+  transition: 0.3s;
   border-radius: 10px;
   position: relative;
   box-shadow: 0 0 3px 0 $day-color;
@@ -95,7 +97,7 @@ body {
   position: relative;
   padding: 0 0 3px;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
@@ -114,10 +116,10 @@ body {
   border: 1px solid $btn-color;
   color: $btn-color;
   border-radius: 10px;
-  transition: .15s;
+  transition: 0.15s;
   width: 85%;
   &:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -144,9 +146,9 @@ body {
     transform: scale(0) translateY(-50%);
     width: 400px;
     box-shadow: 0 0 3px 0 $day-color;
-    border: .5px solid #ffffff;
+    border: 0.5px solid #ffffff;
     border-radius: 10px;
-    transition: .6s;
+    transition: 0.6s;
     &.show {
       transform: scale(1) translateY(-50%);
       z-index: 10;
@@ -161,10 +163,10 @@ body {
     background-color: $priority-color;
     padding: 4px;
     border-radius: 2px;
-    transition: .1s;
+    transition: 0.1s;
     &:after {
       position: absolute;
-      content: '';
+      content: "";
       width: 10px;
       height: 10px;
       bottom: -19px;
@@ -174,7 +176,7 @@ body {
     }
     &.show {
       transform: scale(1) translateY(-50%);
-      transition: .3s;
+      transition: 0.3s;
     }
   }
   &__buttons {
@@ -205,7 +207,7 @@ body {
     border: 1px solid #ffffff;
     border-radius: 7px;
     padding: 10px 15px;
-    transition: .2s;
+    transition: 0.2s;
   }
   &__buttons {
     display: flex;
@@ -230,7 +232,7 @@ body {
   position: relative;
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
@@ -246,7 +248,7 @@ body {
   color: $priority-color;
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
@@ -269,7 +271,7 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
   &:checked + .check-style:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -304,14 +306,15 @@ body {
   position: relative;
   width: 15px;
   height: 15px;
-  transition: .1s;
+  transition: 0.1s;
   padding: 8px;
   cursor: pointer;
   &:hover {
     transform: scale(1.15);
   }
-  &:after, &:before {
-    content: '';
+  &:after,
+  &:before {
+    content: "";
     position: absolute;
     right: 0;
     top: 50%;
@@ -327,14 +330,15 @@ body {
   }
 }
 
-.day__item.high, {
+.day__item.high {
   background-color: $priority-color;
   border: 1px solid $priority-color;
   color: #ffffff;
   .check-style {
     border: 2px solid #ffffff;
   }
-  .list-span:after, .list-span:before {
+  .list-span:after,
+  .list-span:before {
     background-color: #ffffff;
   }
   .checkbox {
@@ -347,7 +351,7 @@ body {
 
 .done {
   text-decoration: line-through;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .delete-trash {
@@ -358,11 +362,11 @@ body {
   bottom: 12px;
   cursor: pointer;
   g {
-    transition: .25s;
+    transition: 0.25s;
   }
   &:hover {
     g {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
 }
@@ -398,12 +402,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
   }
-  .day:nth-child(1), .day:nth-child(2), .day:nth-child(3) {
+  .day:nth-child(1),
+  .day:nth-child(2),
+  .day:nth-child(3) {
     margin: 10px;
   }
 }
-
-/*------*/
 
 /*426px*/
 
@@ -460,13 +464,12 @@ body {
   }
 }
 
-/*------*/
-
 /*375px*/
 
 @media (max-width: 375px) {
   .list {
-    &__hide, .add-btn {
+    &__hide,
+    .add-btn {
       padding: 10px;
     }
   }
@@ -481,17 +484,15 @@ body {
   }
 }
 
-/*------*/
-
 /*320px*/
 
 @media (max-width: 320px) {
   .day {
     margin: 10px 0;
   }
-  .day:nth-child(1), .day:nth-child(2), .day:nth-child(3) {
+  .day:nth-child(1),
+  .day:nth-child(2),
+  .day:nth-child(3) {
     margin: 10px 0;
   }
 }
-
-/*------*/
